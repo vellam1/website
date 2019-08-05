@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 400px;
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+  body {background-image: url(../background.JPG)
+}
+</style>
 <title>Michael's Homepage</title>
 </head>
 <body>
-
-<h1>Hello Internet!</h1>
+<div class="flex-container">
+  <div> test </div>
+  <div> test </div>
+  <div> test </div>
+</div>
 </body>
 </html>

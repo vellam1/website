@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('time').innerHTML =
+  h + ':' + m;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
 <style>
   .flex-container {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding: 400px;
 }
 
 .flex-container > div {
-    width: 200px;
-    height:400px;
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -21,7 +33,7 @@
 }
 
   body {
-    background-image: url(background.JPG);
+    background-image: url(background.JPG)
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -29,11 +41,13 @@
 </style>
 <title>Michael's Homepage</title>
 </head>
-<body>
-<div class="flex-container">
-  <div> <a href="https://www.facebook.com"> <img src="f.png" style="width:100px"> </a> </div>
-  <div> <a href="https://old.reddit.com"> <img src="snoo.png" style="width:100px;"> </a> </div>
-  <div> <a href="https://youtube.com"> <img src="play.png" style="width:100px;"> </a> </div>
-</div>
+<body onload="startTime()">
+  <div id='time'>
+  </div>
+  <div class="flex-container">
+    <div> <a href="https://www.facebook.com"> <img src="f.png" style="width:100px"> </a> </div>
+    <div> <a href="https://old.reddit.com"> <img src="snoo.png" style="width:100px;"> </a> </div>
+    <div> <a href="https://youtube.com"> <img src="play.png" style="width:100px;"> </a> </div>
+    </div>
 </body>
 </html>

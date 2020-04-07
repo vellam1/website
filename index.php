@@ -51,7 +51,7 @@ function checkTime(i) {
   </div>
   <div class="flex-container">
     <div> <a href="https://www.facebook.com/michael.vella.360"> <img src="f.png" style="width:100px"> </a> </div>
-    <div> <a href="https://mjvella.com/music.html"> <img src="music.png" style="width:100px;"> </a> </div>
+    <div> <a href="https://mjvella.com/music"> <img src="music.png" style="width:100px;"> </a> </div>
     <div> <a href="https://www.instagram.com/michael__vella/"> <img src="insta.png" style="width:100px;"> </a> </div>
     <div> <a href="mailto:michaelv_360@hotmail.com" target="_top"> <img src="email.png" style="width:100px;"> </a> </div>
   </div>
